@@ -76,7 +76,7 @@ const [flashVisible, setFlashVisible] = useState(false);
 
 } 
 
-
+//prueba deploy
 const onHandlerClickBall=()=>{
   setAllCounters([...allCounters, ((counter/10 )+ 2)])
 
