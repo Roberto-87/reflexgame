@@ -46,7 +46,7 @@ const [flashVisible, setFlashVisible] = useState(false);
  useEffect(() => {
 
   Swal.fire({
-    html: "<div class='play-container' ><h1 class='play-text'> Photoshoot!</h1></div>",
+    html: "<div class='play-container' ></div>",
     background:  'url(/images/trees.png)',
     color:'black',
     width:'480',
