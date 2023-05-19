@@ -116,10 +116,13 @@ figure {
   background-size: cover;
  
 /*   cursor: pointer; */
- background: url('./images/alien.png');
 
 }
 
+img{
+  background: url('./images/alien.png');
+
+}
 
 
 button {
