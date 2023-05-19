@@ -91,7 +91,11 @@ main {
   width: 100vw;
   grid-template-rows: 60px 1fr 60px;
   cursor: url("/src/images/back-camera.png"), auto; 
- 
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 0, 0.103)),url('./images/cities.jpg') ;
+  
+  background-repeat:inherit;
+  background-size: cover;
+
   
 }
 

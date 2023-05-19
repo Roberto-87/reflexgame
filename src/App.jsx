@@ -53,7 +53,7 @@ const [flashVisible, setFlashVisible] = useState(false);
     showConfirmButton: false,
        backdrop: `
       rgba(78, 72, 73, 0.098)
-      url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmRjOWJkZjcwYzc4ODNhNjBmMDczYmNjZDFkNjk4ZTIwNzFiZGY2OCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/CoBpcNr7nfBmOKJeac/giphy.gif")
+      url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGY1NTBjMTBhYzcwYmQ4MzA2YzIxODliNDk3NjJiMWI1Nzk4ZWNjZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wxKg0LHH01VWCRnilt/giphy.gif")
        center
       no-repeat
     `
@@ -163,7 +163,7 @@ const onHandlerScore = () => {
   return (
     
 
-    <main className="filter-hue-rotate"  style={{background:'linear-gradient(97deg, rgba(255,0,96,1) 0%, rgba(138,88,88,1) 100%)'}} >
+    <main /*  style={{background:'linear-gradient(97deg, rgba(255,0,96,1) 0%, rgba(138,88,88,1) 100%)'}} */ >
       <header  style={{border:'2px black'}}>
         {status === "playing" &&  <h2>{counter / 10} Seconds</h2>}
         { <button onClick={onHandlerScore}>Last score</button>} 
