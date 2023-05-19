@@ -172,10 +172,9 @@ const onHandlerScore = () => {
       <section style={{position:'relative', marginLeft:'5%', marginRight:'5%',padding:'3px' }}>
         {  status==='playing' && 
          <figure  onClick={onHandlerClickBall} style={{top:`${position[0]}%`, left:`${position[1]}%`, position:'absolute',color:'black',background:`${color}`}}> 
-         <img src='./fotografia-a-color.jpg' alt=""  />
-          </figure>}
+         <img src={`../src/images/${imagesName[image]}`} alt=""  /> </figure>}
         {notification && <p>Good streak! </p>}
-
+    
       </section>
       <footer>  
        {status==='initial' &&  <button onClick={onHandlerClick}>Play</button>

@@ -1,5 +1,5 @@
 const imagesName = [
-  "alfajor.png",
+  "alfajor",
   "alien.png",
   "asteroid.png",
   "astronaut.png",
