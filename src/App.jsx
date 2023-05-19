@@ -170,7 +170,10 @@ const onHandlerScore = () => {
       </header>
       
       <section style={{position:'relative', marginLeft:'5%', marginRight:'5%',padding:'3px' }}>
-        {  status==='playing' &&  <figure  onClick={onHandlerClickBall} style={{top:`${position[0]}%`, left:`${position[1]}%`, position:'absolute',color:'black',background:`${color}`}}> <img src={`src/imagesPng/${imagesName[image]}`} alt=""  /> </figure>}
+        {  status==='playing' && 
+         <figure  onClick={onHandlerClickBall} style={{top:`${position[0]}%`, left:`${position[1]}%`, position:'absolute',color:'black',background:`${color}`}}> 
+         <img src='./fotografia-a-color.jpg' alt=""  />
+          </figure>}
         {notification && <p>Good streak! </p>}
 
       </section>
