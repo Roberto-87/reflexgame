@@ -44,20 +44,33 @@ const [flashVisible, setFlashVisible] = useState(false);
  let scoreString = localStorage.getItem('scoreString') || '';
 
  useEffect(() => {
-
   Swal.fire({
-    html: "<div class='play-container' ></div>",
-    background:  'url(/images/trees.png)',
-    color:'black',
-    width:'480',
+    html: "<div id='animated-text' class='play-container'>Play ↓ and take pics of the UFO!</div>",
+    background: 'url(/images/trees.png)',
+    color: 'white',
+    heightAuto: false,
+    width: '480',
     showConfirmButton: false,
-       backdrop: `
+    backdrop: `
       rgba(78, 72, 73, 0.098)
       url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGY1NTBjMTBhYzcwYmQ4MzA2YzIxODliNDk3NjJiMWI1Nzk4ZWNjZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/wxKg0LHH01VWCRnilt/giphy.gif")
-       center
+      center
       no-repeat
     `
   });
+  
+  let animatedText = document.getElementById('animated-text');
+  animatedText.animate([
+    { transform: 'translateY(0px)' },
+    { transform: 'translateY(-15px)' }
+  ], {
+    duration: 1000,
+    iterations: Infinity,
+    direction: 'alternate',
+    easing: 'ease-in-out'
+  });
+  
+
   const timeoutId = setInterval(function () {
     setPosition([Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)]);
     setColor(getRandomColor());
